@@ -1,7 +1,7 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEditor;
+using UnityEditor.SceneManagement;
 
 public class Rocket : MonoBehaviour
 {
@@ -27,21 +27,37 @@ public class Rocket : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
+        print(SceneManager.GetActiveScene().buildIndex);
         switch (collision.gameObject.tag)
         {
             case "Friendly":
-                //do nothing 
-                print("OK"); //todo remove this line
                 break;
-            case "Fuel":
-                //do nothing
-                print("Fuel"); //todo remove this line
+            case "Finish":
+                LoadNextLevel();
                 break;
             default:
-                print("Dead");
+                LoadFirstLevel();
                 //blow up ship and restart option
                 break;
         }
+    }
+
+    private void LoadNextLevel()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        int nextSceneIndex = currentSceneIndex + 1;
+
+        if(nextSceneIndex == SceneManager.sceneCountInBuildSettings)
+        {
+            nextSceneIndex = 0;
+        }
+
+        SceneManager.LoadScene(nextSceneIndex);
+    }
+
+    private void LoadFirstLevel()
+    {
+        SceneManager.LoadScene(0);
     }
 
     private void Thrust()
