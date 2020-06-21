@@ -178,6 +178,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b1dbb9f30586cb47bd61f9f84276599, type: 3}
+--- !u!1 &276377527 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5007476309119028874, guid: 82d03f9523d2bd846a5a320da6d55640,
+    type: 3}
+  m_PrefabInstance: {fileID: 1026265384}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &276377528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276377527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90052f7b025d66647890668e3e23ad3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementVector: {x: -20, y: 0, z: 0}
+  period: 2
+  movementFactor: 0.159
 --- !u!1001 &304822443
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -473,12 +494,12 @@ PrefabInstance:
     - target: {fileID: 3373495818194264415, guid: 716c1a4d4bc59ab4b84aaaa794780948,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -36.1
+      value: -36.11
       objectReference: {fileID: 0}
     - target: {fileID: 3373495818194264415, guid: 716c1a4d4bc59ab4b84aaaa794780948,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.95
+      value: 6.16
       objectReference: {fileID: 0}
     - target: {fileID: 3373495818194264415, guid: 716c1a4d4bc59ab4b84aaaa794780948,
         type: 3}
@@ -723,6 +744,27 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 844938945}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &909058535 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2089093500790135509, guid: b9d9b8d2abcdb044cb5a7140f519d5a9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1710031086}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &909058536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909058535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90052f7b025d66647890668e3e23ad3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementVector: {x: -20, y: 0, z: 0}
+  period: 2
+  movementFactor: 0.145
 --- !u!1001 &965219849
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1183,6 +1225,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2074248563}
     m_Modifications:
+    - target: {fileID: 1042180218895133542, guid: b9d9b8d2abcdb044cb5a7140f519d5a9,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1851563582785006931, guid: b9d9b8d2abcdb044cb5a7140f519d5a9,
         type: 3}
       propertyPath: m_LocalPosition.x
