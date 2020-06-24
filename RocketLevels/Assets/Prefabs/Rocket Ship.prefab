@@ -445,8 +445,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c334269c41ed1574b94f284dc6e773e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rcsThrust: 200
-  mainThrust: 20
+  rcsThrust: 300
+  mainThrust: 2000
+  levelLoadDelay: 2
   mainEngine: {fileID: 8300000, guid: 00d3d4aeaf077bf43b1dfe9fac560526, type: 3}
   explode: {fileID: 8300000, guid: afe946b20f1a9ed4f8f4f3eac9e1c098, type: 3}
   wonLevel: {fileID: 8300000, guid: 80efe0ea1dd4520479bcb4c39986dd99, type: 3}
